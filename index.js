@@ -1,6 +1,11 @@
 // Code your solution in this file
 function findMatching(drivers, name) {
-  // return name
+  x = drivers.filter(function (driver_name) { if (driver_name.toUpperCase() == name.toUpperCase()) {return driver_name}; });
+  return x
+}
+
+function fuzzyMatch(drivers, string) {
+  length = string.length
   x = drivers.filter(function (driver_name) { if (driver_name.toUpperCase() == name.toUpperCase()) {return driver_name}; });
   return x
 }
