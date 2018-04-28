@@ -12,7 +12,7 @@ function fuzzyMatch(drivers, string) {
 }
 
 function matchName(drivers, name) {
-  x = drivers.filter(function (driver_name) { if (driver_name.toUpperCase() == name.toUpperCase()) {return driver_name}; });
+  x = drivers.filter(function (driver) { if (driver.name == name.toUpperCase()) {return driver_name}; });
   return x
 }
 // function fuzzyMatch
