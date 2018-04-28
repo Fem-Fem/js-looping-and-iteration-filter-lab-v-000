@@ -12,7 +12,7 @@ function fuzzyMatch(drivers, string) {
 }
 
 function matchName(drivers, name) {
-  x = drivers.filter(function (driver) { if (driver.name == name) {return driver_name}; });
+  x = drivers.filter(function (driver) { if (driver[name] == name) {return drive}; });
   return x
 }
 // function fuzzyMatch
