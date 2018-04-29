@@ -15,5 +15,3 @@ function matchName(drivers, name) {
   x = drivers.filter(function (driver) { if (driver.name == name) {return driver}; });
   return x
 }
-// function fuzzyMatch
-// fuzzyMatch - This function takes an array of drivers and a string as arguments for querying the array, and returns all drivers whose names begin with the provided letters.
